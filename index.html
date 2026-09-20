@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Benji Bokomofulo — Étudiant en Sciences Informatiques, Réseaux & Télécommunications, Université Révérend Kim. Portfolio : compétences, projets, expériences.">
+<title>Benji Bokomofulo — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sprite d'icônes SVG — dessinées à la main, sobres, sans emoji -->
+<svg style="display:none">
+  <symbol id="icon-network" viewBox="0 0 24 24"><circle cx="12" cy="4" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M12 6v5M12 11l-6 5M12 11l6 5"/></symbol>
+  <symbol id="icon-code" viewBox="0 0 24 24"><path d="M8 6 3 12l5 6M16 6l5 6-5 6M13 4l-2 16"/></symbol>
+  <symbol id="icon-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="7" ry="2.6"/><path d="M5 5v14c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V5"/><path d="M5 12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6"/></symbol>
+  <symbol id="icon-cpu" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1.4"/><rect x="10" y="2.5" width="4" height="3"/><rect x="10" y="18.5" width="4" height="3"/><rect x="2.5" y="10" width="3" height="4"/><rect x="18.5" y="10" width="3" height="4"/></symbol>
+  <symbol id="icon-terminal" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="1.6"/><path d="M6.5 9.5 10 12l-3.5 2.5M13 15h4.5"/></symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 2.5 19.5 5.5V11c0 5-3 8.6-7.5 10.5C7.5 19.6 4.5 16 4.5 11V5.5Z"/><path d="M9 12l2 2 4-4.2"/></symbol>
+  <symbol id="icon-hands" viewBox="0 0 24 24"><path d="M12 20.5s-7-4.4-9-8.4C1.6 8.9 3.4 6 6.2 6c1.6 0 2.9.9 3.8 2.1C10.9 6.9 12.2 6 13.8 6c2.8 0 4.6 2.9 3.2 6.1-2 4-9 8.4-9 8.4Z"/></symbol>
+  <symbol id="icon-users" viewBox="0 0 24 24"><circle cx="8.5" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M2.5 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14.5 14.6c2.6.2 4.6 2.1 4.9 4.7"/></symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="1.6"/><path d="m3 6 9 7 9-7"/></symbol>
+  <symbol id="icon-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5v6M8 7.8v.1M12 16.5v-3.7c0-1.5 1-2.6 2.4-2.6 1.3 0 2.1 1 2.1 2.6v3.7"/></symbol>
+  <symbol id="icon-gh" viewBox="0 0 24 24"><path d="M12 2.5A9.5 9.5 0 0 0 8.9 21c.5.1.7-.2.7-.5v-1.8c-2.7.6-3.2-1.2-3.2-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.2-4.5-1.1-4.5-4.8 0-1.1.4-1.9 1-2.6-.1-.2-.4-1.2.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.6.6.7 1 1.5 1 2.6 0 3.7-2.3 4.6-4.5 4.8.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5Z"/></symbol>
+  <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6.3 7-12A7 7 0 0 0 5 9.5c0 5.7 7 12 7 12Z"/><circle cx="12" cy="9.5" r="2.4"/></symbol>
+  <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 6 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-6-3.8-9s1.3-6.5 3.8-9Z"/></symbol>
+  <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 2.5 2.9 6.1 6.6.7-4.9 4.6 1.3 6.6-5.9-3.3-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.7Z"/></symbol>
+  <symbol id="icon-doc" viewBox="0 0 24 24"><path d="M6.5 2.5h8l4 4v14a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-17a1 1 0 0 1 1-1Z"/><path d="M14 2.5V7h4.5M8.5 12h7M8.5 15.5h7M8.5 8.5h3"/></symbol>
+</svg>
+
+
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Navigation principale">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">BB</span>
+      Benji Bokomofulo
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#accueil" data-i18n="nav-accueil">Accueil</a></li>
+      <li><a href="#a-propos" data-i18n="nav-apropos">À propos</a></li>
+      <li><a href="#competences" data-i18n="nav-competences">Compétences</a></li>
+      <li><a href="#experiences" data-i18n="nav-experiences">Expériences</a></li>
+      <li><a href="#projets" data-i18n="nav-projets">Projets</a></li>
+      <li><a href="cv.html" data-i18n="nav-cv">Mon CV</a></li>
+      <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+    </ul>
+    <label class="theme-switch" aria-label="Basculer le mode sombre">
+      <input type="checkbox" id="theme-toggle">
+      <span class="theme-switch-track"><span class="theme-switch-thumb"></span></span>
+    </label>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marquee-track"></div>
+</div>
+
+<main>
+
+  <!-- ===================== HERO — carrousel photo ===================== -->
+  <section class="hero" id="accueil">
+    <div class="hero-carousel" aria-hidden="true">
+      <img src="image1.jpg" alt="" class="is-active">
+      <img src="image2.jpg" alt="">
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <span class="hero-badge" data-i18n="hero-badge">Réseaux · Développement · Cybersécurité</span>
+      <h1>Benji Bokomofulo</h1>
+      <p class="subtitle" data-i18n="hero-subtitle">Étudiant en Sciences Informatiques — Réseaux &amp; Télécommunications</p>
+      <p class="subsubtitle" data-i18n="hero-subsubtitle">Université Révérend Kim · Kinshasa, RDC</p>
+      <p class="slogan" data-i18n="hero-slogan">« Bienvenue dans la page de l'ingénieur Ben ; l'excellence scientifique pour le développement technologique de la RDC. »</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn" data-i18n="hero-cta1">Me contacter</a>
+        <a href="cv.html" class="btn btn-outline" data-i18n="hero-cta2">Voir mon CV</a>
+      </div>
+    </div>
+    <div class="carousel-dots" aria-hidden="true">
+      <span class="is-active"></span><span></span>
+    </div>
+  </section>
+
+  <!-- ===================== ÉTAT CIVIL ===================== -->
+  <div class="identity-strip">
+    <div class="identity-grid">
+      <span data-i18n="id-naissance">Né le <strong>02 décembre 2005</strong> à Kinshasa, RDC</span>
+      <span data-i18n="id-parents">Fils de <strong>Junior Bokomofulo</strong> et <strong>Charlène Kamuanya</strong></span>
+      <span data-i18n="id-fratrie">Aîné d'une fratrie de <strong>8 enfants</strong></span>
+    </div>
+  </div>
+
+  <!-- ===================== CHIFFRES CLÉS ===================== -->
+  <section class="stats-strip">
+    <div class="section-inner stats-grid">
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="3">0</span><span class="stat-suffix">e</span>
+        <p data-i18n="stat-1-label">Année de Licence (L3)</p>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="8">0</span>
+        <p data-i18n="stat-2-label">Frères et sœurs</p>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="79">0</span><span class="stat-suffix">%</span>
+        <p data-i18n="stat-3-label">Moyenne au Diplôme d'État</p>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="6">0</span>
+        <p data-i18n="stat-4-label">Domaines de compétence</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== À PROPOS ===================== -->
+  <section class="section bg-soft" id="a-propos">
+    <div class="section-inner about-grid">
+      <figure class="about-photo reveal">
+        <img src="image4.jpg" alt="Benji Bokomofulo">
+      </figure>
+      <div class="about-text reveal">
+        <h2 class="with-underline" data-i18n="apropos-title">Qui suis-je ?</h2>
+        <p data-i18n="apropos-p1">Je m'appelle Benji Bokomofulo, étudiant en Troisième Licence à l'Université Révérend Kim, Faculté des Sciences Informatiques, Département Réseaux Informatiques &amp; Télécommunications. Je suis un jeune ingénieur en devenir, passionné par les mathématiques, la technologie, la cybersécurité, les réseaux, le développement web et mobile, les systèmes embarqués et l'innovation numérique.</p>
+        <p data-i18n="apropos-p2">Mon parcours est marqué par une implication active dans le monde académique, ecclésiastique et communautaire : moniteur auprès des enfants à l'Église Source de Vie — La Borne Macampagne, et membre organisateur du CIC. Aîné d'une famille de huit enfants, j'ai développé très tôt un sens élevé de responsabilité, de leadership et d'organisation.</p>
+        <ul class="values-list">
+          <li data-i18n="val-1">Discipline</li>
+          <li data-i18n="val-2">Rigueur</li>
+          <li data-i18n="val-3">Leadership</li>
+          <li data-i18n="val-4">Créativité</li>
+          <li data-i18n="val-5">Adaptabilité</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMPÉTENCES ===================== -->
+  <section class="section" id="competences">
+    <div class="section-inner">
+      <h2 class="with-underline reveal" data-i18n="competences-title">Compétences techniques</h2>
+      <p class="section-lead reveal" data-i18n="competences-lead">Des compétences construites entre formation académique, pratique autodidacte et projets concrets.</p>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="icon-box"><svg class="icon-svg"><use href="#icon-network"/></svg></div>
+          <h3 data-i18n="cat-reseaux">Réseaux Informatiques</h3>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Câblage RJ45 / fibre</span><span>70%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="70"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>TCP/IP, DHCP, DNS, HTTP(S)</span><span>70%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="70"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Routeurs &amp; Switches</span><span>60%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="60"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Sécurité réseau</span><span>50%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="50"></div></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="icon-box"><svg class="icon-svg"><use href="#icon-code"/></svg></div>
+          <h3 data-i18n="cat-dev">Développement Web</h3>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>HTML5</span><span>80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="80"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>CSS3</span><span>75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="75"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>JavaScript</span><span>60%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="60"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>PHP</span><span>65%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="65"></div></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="icon-box"><svg class="icon-svg"><use href="#icon-database"/></svg></div>
+          <h3 data-i18n="cat-bdd">Bases de Données</h3>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>MySQL</span><span>80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="80"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>MERISE (MCD/MLD/MPD)</span><span>75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="75"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>PostgreSQL</span><span>40%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="40"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Optimisation SQL</span><span>60%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="60"></div></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="icon-box"><svg class="icon-svg"><use href="#icon-cpu"/></svg></div>
+          <h3 data-i18n="cat-iot">Systèmes Embarqués &amp; IoT</h3>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>ESP32 / ESP8266</span><span>60%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="60"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Automatisation</span><span>65%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="65"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Arduino</span><span>50%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="50"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Capteurs (ultrason, temp.)</span><span>55%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="55"></div></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="icon-box"><svg class="icon-svg"><use href="#icon-terminal"/></svg></div>
+          <h3 data-i18n="cat-prog">Programmation</h3>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Python</span><span>65%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="65"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Algorithmique</span><span>60%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="60"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>C</span><span>40%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="40"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Java</span><span>30%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="30"></div></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="icon-box"><svg class="icon-svg"><use href="#icon-shield"/></svg></div>
+          <h3 data-i18n="cat-cyber">Cybersécurité</h3>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Sécurité réseau</span><span>50%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="50"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Bonnes pratiques</span><span>45%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="45"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Veille &amp; apprentissage</span><span>55%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-percent="55"></div></div></div>
+        </div>
+
+      </div>
+
+      <h3 class="reveal" style="margin-top:44px;margin-bottom:6px;" data-i18n="softskills-title">Compétences humaines</h3>
+      <ul class="softskills-list reveal">
+        <li data-i18n="soft-1">Leadership</li>
+        <li data-i18n="soft-2">Communication</li>
+        <li data-i18n="soft-3">Organisation</li>
+        <li data-i18n="soft-4">Gestion du stress</li>
+        <li data-i18n="soft-5">Résolution de problèmes</li>
+        <li data-i18n="soft-6">Travail en équipe</li>
+        <li data-i18n="soft-7">Adaptabilité</li>
+        <li data-i18n="soft-8">Sens de l'initiative</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== EXPÉRIENCES ===================== -->
+  <section class="section bg-soft" id="experiences">
+    <div class="section-inner">
+      <h2 class="with-underline reveal" data-i18n="exp-title">Expériences &amp; responsabilités</h2>
+      <div class="exp-grid">
+        <div class="exp-card reveal">
+          <div class="icon-box"><svg class="icon-svg"><use href="#icon-hands"/></svg></div>
+          <h3 data-i18n="exp1-title">Église Source de Vie — La Borne Macampagne</h3>
+          <p data-i18n="exp1-role" style="font-weight:600;color:var(--black);margin-bottom:8px;">Moniteur auprès des enfants</p>
+          <ul>
+            <li data-i18n="exp1-li1">Encadrement et enseignement des enfants</li>
+            <li data-i18n="exp1-li2">Organisation d'activités pédagogiques</li>
+            <li data-i18n="exp1-li3">Gestion de groupes et communication</li>
+          </ul>
+        </div>
+        <div class="exp-card reveal">
+          <div class="icon-box"><svg class="icon-svg"><use href="#icon-users"/></svg></div>
+          <h3 data-i18n="exp2-title">CIC — Comité d'Initiative et de Coordination</h3>
+          <p data-i18n="exp2-role" style="font-weight:600;color:var(--black);margin-bottom:8px;">Membre de l'équipe organisatrice</p>
+          <ul>
+            <li data-i18n="exp2-li1">Coordination et planification d'événements</li>
+            <li data-i18n="exp2-li2">Gestion de projets en équipe</li>
+            <li data-i18n="exp2-li3">Responsable de la Programmation des Formations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJETS ===================== -->
+  <section class="section" id="projets">
+    <div class="section-inner">
+      <h2 class="with-underline reveal" data-i18n="projets-title">Projets réalisés</h2>
+      <p class="section-lead reveal" data-i18n="projets-lead">Une sélection de projets académiques et personnels, entre réseaux, IoT, web et mobile.</p>
+      <div class="filter-row reveal">
+        <button class="filter-btn active" data-filter="tous" data-i18n="filter-tous">Tous</button>
+        <button class="filter-btn" data-filter="iot" data-i18n="filter-iot">IoT</button>
+        <button class="filter-btn" data-filter="mobile" data-i18n="filter-mobile">Mobile</button>
+        <button class="filter-btn" data-filter="reseau" data-i18n="filter-reseau">Réseau</button>
+        <button class="filter-btn" data-filter="web" data-i18n="filter-web">Web</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal" data-category="iot">
+          <span class="tag" data-i18n="proj1-tag">IoT</span>
+          <h3 data-i18n="proj1-title">Régulation du niveau d'eau</h3>
+          <p data-i18n="proj1-desc">ESP32 + capteur ultrason, API PHP/MySQL, interface web temps réel, automatisation de pompe et alertes.</p>
+        </div>
+        <div class="project-card reveal" data-category="mobile">
+          <span class="tag" data-i18n="proj2-tag">Mobile</span>
+          <h3 data-i18n="proj2-title">Applications institutionnelles</h3>
+          <p data-i18n="proj2-desc">Gestion d'églises, d'écoles, d'académies, de pharmacies et de restaurants (membres, notes, stocks, facturation).</p>
+        </div>
+        <div class="project-card reveal" data-category="reseau">
+          <span class="tag" data-i18n="proj3-tag">Réseau</span>
+          <h3 data-i18n="proj3-title">Optimisation réseau</h3>
+          <p data-i18n="proj3-desc">Analyse du trafic, optimisation de bande passante, configuration et sécurisation d'équipements réseau.</p>
+        </div>
+        <div class="project-card reveal" data-category="web">
+          <span class="tag" data-i18n="proj4-tag">Web</span>
+          <h3 data-i18n="proj4-title">Projets académiques &amp; personnels</h3>
+          <p data-i18n="proj4-desc">Bases de données complexes, scripts Python d'automatisation, mini-API REST, simulations Cisco Packet Tracer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OBJECTIFS ===================== -->
+  <section class="section timeline-section" id="objectifs">
+    <div class="section-inner">
+      <h2 class="with-underline reveal" data-i18n="objectifs-title">Objectifs professionnels</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <h3 data-i18n="obj1-title">Court terme</h3>
+          <p data-i18n="obj1-desc">Valider ma L3, obtenir la certification CCNA 1 et renforcer mes bases en cybersécurité.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <h3 data-i18n="obj2-title">Moyen terme</h3>
+          <p data-i18n="obj2-desc">Concevoir des systèmes IoT avancés et développer des solutions web &amp; mobiles professionnelles.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <h3 data-i18n="obj3-title">Long terme</h3>
+          <p data-i18n="obj3-desc">Devenir ingénieur réseau &amp; cybersécurité, et créer une entreprise technologique en RDC.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER / CONTACT ===================== -->
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div>
+      <h3 data-i18n="contact-title">Me contacter</h3>
+      <p style="color:rgba(255,255,255,0.7);margin-bottom:16px;" data-i18n="contact-lead">Une question, un projet ou une opportunité ? Écrivez-moi directement — le message arrive dans ma boîte mail.</p>
+      <!-- Formulaire : ouvre directement le client mail du visiteur (aucun service tiers requis) -->
+      <form id="contact-form" action="mailto:bokomofulob@gmail.com" method="POST" enctype="text/plain">
+        <div class="form-field">
+          <label for="name" data-i18n="form-name">Nom</label>
+          <input type="text" id="name" name="Nom" required>
+        </div>
+        <div class="form-field">
+          <label for="email" data-i18n="form-email">Email</label>
+          <input type="email" id="email" name="Email" required>
+        </div>
+        <div class="form-field">
+          <label for="message" data-i18n="form-message">Message</label>
+          <textarea id="message" name="Message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline" data-i18n="form-submit">Envoyer le message</button>
+        <p id="form-feedback" style="margin-top:10px;font-size:13.5px;"></p>
+      </form>
+      <p style="margin-top:12px;font-size:13px;color:rgba(255,255,255,0.6);" data-i18n="form-fallback">Le formulaire ne s'ouvre pas ? Écrivez-moi directement :</p>
+      <a href="mailto:bokomofulob@gmail.com" style="font-size:13.5px;text-decoration:underline;color:rgba(255,255,255,0.85);">bokomofulob@gmail.com</a>
+      <br>
+      <button class="copy-email-btn" data-i18n="copy-email">Copier l'adresse email</button>
+    </div>
+    <div>
+      <h3 data-i18n="footer-liens">Liens</h3>
+      <ul>
+        <li><svg class="icon-svg icon-inline"><use href="#icon-mail"/></svg> <a href="mailto:bokomofulob@gmail.com">bokomofulob@gmail.com</a></li>
+        <li><svg class="icon-svg icon-inline"><use href="#icon-in"/></svg> <a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><svg class="icon-svg icon-inline"><use href="#icon-gh"/></svg> <a href="#" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="cv.html" data-i18n="nav-cv">Mon CV</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 data-i18n="footer-infos">Infos</h3>
+      <ul>
+        <li><svg class="icon-svg icon-inline"><use href="#icon-pin"/></svg> <span data-i18n="footer-loc">Kinshasa, RDC</span></li>
+        <li><span data-i18n="footer-dispo">Disponible pour échanges &amp; collaborations</span></li>
+        <li><span data-i18n="footer-cursus">L3 Réseaux &amp; Télécoms</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span class="current-year">2026</span> Benji Bokomofulo</span>
+    <button id="back-to-top" data-i18n="back-top" style="opacity:0;pointer-events:none;">Haut de page</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
